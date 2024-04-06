@@ -29,6 +29,9 @@ dependencies:
   '@angular/router':
     specifier: ^17.3.0
     version: 17.3.3(@angular/common@17.3.3)(@angular/core@17.3.3)(@angular/platform-browser@17.3.3)(rxjs@7.8.1)
+  '@ngrx/signals':
+    specifier: ^17.1.1
+    version: 17.1.1(@angular/core@17.3.3)(rxjs@7.8.1)
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -3314,6 +3317,23 @@ packages:
     dependencies:
       call-bind: 1.0.7
     dev: true
+
+  /@ngrx/signals@17.1.1(@angular/core@17.3.3)(rxjs@7.8.1):
+    resolution:
+      {
+        integrity: sha512-9Rlw7u8LxkyS+HMZe7DzUkV1p/2IL5tDa1ZHhX8Ldilx4HoOHvISdzCagCpXMoXDLZGEaWOA/n/BcQQxsjytEg==,
+      }
+    peerDependencies:
+      '@angular/core': ^17.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    peerDependenciesMeta:
+      rxjs:
+        optional: true
+    dependencies:
+      '@angular/core': 17.3.3(rxjs@7.8.1)(zone.js@0.14.4)
+      rxjs: 7.8.1
+      tslib: 2.6.2
+    dev: false
 
   /@ngtools/webpack@17.3.3(@angular/compiler-cli@17.3.3)(typescript@5.4.4)(webpack@5.90.3):
     resolution:

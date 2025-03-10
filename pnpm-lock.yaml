@@ -7023,7 +7023,7 @@ snapshots:
 
   '@npmcli/fs@3.1.1':
     dependencies:
-      semver: 7.7.1
+      semver: 7.6.0
 
   '@npmcli/git@5.0.8':
     dependencies:
@@ -7054,7 +7054,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.2
       proc-log: 4.2.0
-      semver: 7.7.1
+      semver: 7.6.0
     transitivePeerDependencies:
       - bluebird
 
@@ -10026,7 +10026,7 @@ snapshots:
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.7.1
+      semver: 7.6.0
       tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -10043,7 +10043,7 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.7.1
+      semver: 7.6.0
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}

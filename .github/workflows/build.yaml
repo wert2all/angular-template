@@ -1,4 +1,4 @@
-name: Code Quality checks
+name: Build check
 
 on:
   push:
@@ -12,8 +12,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  prettier:
-    name: Static tests
+  build:
+    name: Build test
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -48,8 +48,10 @@ jobs:
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
 
-      - name: Check formatting with Prettier
-        run: pnpm lint:format
+      - name: Decrypt large secret
+        run: ./decrypt_secret.sh
+        env:
+          ENV_DECODE_PASSPHRASE: ${{ secrets.ENV_DECODE_PASSPHRASE }}
 
-      - name: Lint by ESLint
-        run: pnpm lint:eslint
+      - name: Build
+        run: pnpm build
